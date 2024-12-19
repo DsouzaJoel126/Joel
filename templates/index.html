@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ontology Viewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>Ontology Viewer</h1>
+        <p>Explore the ontology's different classes and their details.</p>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Integration Classes</h2>
+            <ul>
+                {% for integration_class in integration_classes %}
+                    <li><a href="{{ url_for('view_class', class_name=integration_class.name) }}">{{ integration_class.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Function Classes</h2>
+            <ul>
+                {% for function_class in function_classes %}
+                    <li><a href="{{ url_for('view_class', class_name=function_class.name) }}">{{ function_class.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Result Classes</h2>
+            <ul>
+                {% for result_class in result_classes %}
+                    <li><a href="{{ url_for('view_class', class_name=result_class.name) }}">{{ result_class.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Step Classes</h2>
+            <ul>
+                {% for step_class in step_classes %}
+                    <li><a href="{{ url_for('view_class', class_name=step_class.name) }}">{{ step_class.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technique Classes</h2>
+            <ul>
+                {% for technique_class in technique_classes %}
+                    <li><a href="{{ url_for('view_class', class_name=technique_class.name) }}">{{ technique_class.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

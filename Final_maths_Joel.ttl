@@ -1,0 +1,229 @@
+@prefix : <http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/> .
+
+<http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/hasFunction
+:hasFunction rdf:type owl:ObjectProperty ;
+             rdfs:domain :Integration ;
+             rdfs:range :Function .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/hasIntegration
+:hasIntegration rdf:type owl:ObjectProperty ;
+                rdfs:domain :Integration ;
+                rdfs:range :Steps .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/hasResult
+:hasResult rdf:type owl:ObjectProperty ;
+           rdfs:domain :Integration ;
+           rdfs:range :Result .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/hasStep
+:hasStep rdf:type owl:ObjectProperty ;
+         rdfs:domain :Integration ;
+         rdfs:range :Steps .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/hasTechnique
+:hasTechnique rdf:type owl:ObjectProperty ;
+              rdfs:domain :Integration ;
+              rdfs:range :Techniques .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdf:type owl:FunctionalProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Definite_Integral
+:Definite_Integral rdf:type owl:Class ;
+                   rdfs:subClassOf :Integration ;
+                   owl:disjointWith :Indefinite_Integral .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Function
+:Function rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Improper_Integral
+:Improper_Integral rdf:type owl:Class ;
+                   rdfs:subClassOf :Integration .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Indefinite_Integral
+:Indefinite_Integral rdf:type owl:Class ;
+                     rdfs:subClassOf :Integration .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Integration
+:Integration rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Integration_by_Parts
+:Integration_by_Parts rdf:type owl:Class ;
+                      rdfs:subClassOf :Techniques .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Logarithmic_Function
+:Logarithmic_Function rdf:type owl:Class ;
+                      rdfs:subClassOf :Function .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Partial_Fractions
+:Partial_Fractions rdf:type owl:Class ;
+                   rdfs:subClassOf :Techniques .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Polynomial_Function
+:Polynomial_Function rdf:type owl:Class ;
+                     rdfs:subClassOf :Function .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Result
+:Result rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Steps
+:Steps rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Substitution
+:Substitution rdf:type owl:Class ;
+              rdfs:subClassOf :Techniques .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Techniques
+:Techniques rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Trigonometric_Function
+:Trigonometric_Function rdf:type owl:Class ;
+                        rdfs:subClassOf :Function .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Integral1
+:Integral1 rdf:type owl:NamedIndividual ,
+                    :Definite_Integral ;
+           :hasFunction :Polynomial_Function ;
+           :hasResult :Result1 ;
+           :hasStep :Step1 ;
+           :hasTechnique :Substitution .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Integral2
+:Integral2 rdf:type owl:NamedIndividual ,
+                    :Improper_Integral ;
+           :hasFunction :Trigonometric_Function ;
+           :hasResult :Result2 ;
+           :hasStep :Step2 ;
+           :hasTechnique :Integration_by_Parts .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Integration_by_Parts
+:Integration_by_Parts rdf:type owl:NamedIndividual ,
+                               :Integration_by_Parts ;
+                      :hasStep :Step2 .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Logarithmic_Function
+:Logarithmic_Function rdf:type owl:NamedIndividual ,
+                               :Logarithmic_Function .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Partial_Fractions
+:Partial_Fractions rdf:type owl:NamedIndividual ,
+                            :Partial_Fractions .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Polynomial_Function
+:Polynomial_Function rdf:type owl:NamedIndividual ,
+                              :Polynomial_Function ;
+                     :hasResult :Result2 .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Result1
+:Result1 rdf:type owl:NamedIndividual ,
+                  :Result ;
+         :hasFunction :Polynomial_Function .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Result2
+:Result2 rdf:type owl:NamedIndividual ,
+                  :Result ;
+         :hasFunction :Trigonometric_Function .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Step1
+:Step1 rdf:type owl:NamedIndividual ,
+                :Steps ;
+       :hasIntegration :Integral1 ;
+       :hasTechnique :Substitution .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Step2
+:Step2 rdf:type owl:NamedIndividual ,
+                :Steps ;
+       :hasIntegration :Integral2 ,
+                       :Integration_by_Parts .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Substitution
+:Substitution rdf:type owl:NamedIndividual ,
+                       :Substitution ;
+              :hasStep :Step1 .
+
+
+###  http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/Trigonometric_Function
+:Trigonometric_Function rdf:type owl:NamedIndividual ,
+                                 :Trigonometric_Function ;
+                        :hasResult :Result2 .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Definite_Integral
+                :Improper_Integral
+                :Indefinite_Integral
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Integration_by_Parts
+                :Partial_Fractions
+                :Substitution
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Logarithmic_Function
+                :Polynomial_Function
+                :Trigonometric_Function
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/akashkibehan/ontologies/2024/11/untitled-ontology-4/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="/Definite_Integral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Improper_Integral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Indefinite_Integral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Integration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Integration_by_Parts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Logarithmic_Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Partial_Fractions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Polynomial_Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Result"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Steps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Substitution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Techniques"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Trigonometric_Function"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasFunction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasIntegration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasStep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasTechnique"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Integral1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Integral2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Integration_by_Parts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Logarithmic_Function"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Partial_Fractions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Polynomial_Function"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Result1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Result2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Step1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Step2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Substitution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Trigonometric_Function"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/Definite_Integral"/>
+        <Class IRI="/Integration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Improper_Integral"/>
+        <Class IRI="/Integration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Indefinite_Integral"/>
+        <Class IRI="/Integration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Integration_by_Parts"/>
+        <Class IRI="/Techniques"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Logarithmic_Function"/>
+        <Class IRI="/Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Partial_Fractions"/>
+        <Class IRI="/Techniques"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Polynomial_Function"/>
+        <Class IRI="/Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Substitution"/>
+        <Class IRI="/Techniques"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Trigonometric_Function"/>
+        <Class IRI="/Function"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/Definite_Integral"/>
+        <Class IRI="/Improper_Integral"/>
+        <Class IRI="/Indefinite_Integral"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Definite_Integral"/>
+        <Class IRI="/Indefinite_Integral"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Integration_by_Parts"/>
+        <Class IRI="/Partial_Fractions"/>
+        <Class IRI="/Substitution"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Logarithmic_Function"/>
+        <Class IRI="/Polynomial_Function"/>
+        <Class IRI="/Trigonometric_Function"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="/Definite_Integral"/>
+        <NamedIndividual IRI="/Integral1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Improper_Integral"/>
+        <NamedIndividual IRI="/Integral2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Integration_by_Parts"/>
+        <NamedIndividual IRI="/Integration_by_Parts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Logarithmic_Function"/>
+        <NamedIndividual IRI="/Logarithmic_Function"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Partial_Fractions"/>
+        <NamedIndividual IRI="/Partial_Fractions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Polynomial_Function"/>
+        <NamedIndividual IRI="/Polynomial_Function"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Result"/>
+        <NamedIndividual IRI="/Result1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Result"/>
+        <NamedIndividual IRI="/Result2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Steps"/>
+        <NamedIndividual IRI="/Step1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Steps"/>
+        <NamedIndividual IRI="/Step2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Substitution"/>
+        <NamedIndividual IRI="/Substitution"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Trigonometric_Function"/>
+        <NamedIndividual IRI="/Trigonometric_Function"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasFunction"/>
+        <NamedIndividual IRI="/Integral1"/>
+        <NamedIndividual IRI="/Polynomial_Function"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasResult"/>
+        <NamedIndividual IRI="/Integral1"/>
+        <NamedIndividual IRI="/Result1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasStep"/>
+        <NamedIndividual IRI="/Integral1"/>
+        <NamedIndividual IRI="/Step1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasTechnique"/>
+        <NamedIndividual IRI="/Integral1"/>
+        <NamedIndividual IRI="/Substitution"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasFunction"/>
+        <NamedIndividual IRI="/Integral2"/>
+        <NamedIndividual IRI="/Trigonometric_Function"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasResult"/>
+        <NamedIndividual IRI="/Integral2"/>
+        <NamedIndividual IRI="/Result2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasStep"/>
+        <NamedIndividual IRI="/Integral2"/>
+        <NamedIndividual IRI="/Step2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasTechnique"/>
+        <NamedIndividual IRI="/Integral2"/>
+        <NamedIndividual IRI="/Integration_by_Parts"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasStep"/>
+        <NamedIndividual IRI="/Integration_by_Parts"/>
+        <NamedIndividual IRI="/Step2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasResult"/>
+        <NamedIndividual IRI="/Polynomial_Function"/>
+        <NamedIndividual IRI="/Result2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasFunction"/>
+        <NamedIndividual IRI="/Result1"/>
+        <NamedIndividual IRI="/Polynomial_Function"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasFunction"/>
+        <NamedIndividual IRI="/Result2"/>
+        <NamedIndividual IRI="/Trigonometric_Function"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasIntegration"/>
+        <NamedIndividual IRI="/Step1"/>
+        <NamedIndividual IRI="/Integral1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasTechnique"/>
+        <NamedIndividual IRI="/Step1"/>
+        <NamedIndividual IRI="/Substitution"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasIntegration"/>
+        <NamedIndividual IRI="/Step2"/>
+        <NamedIndividual IRI="/Integral2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasIntegration"/>
+        <NamedIndividual IRI="/Step2"/>
+        <NamedIndividual IRI="/Integration_by_Parts"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasStep"/>
+        <NamedIndividual IRI="/Substitution"/>
+        <NamedIndividual IRI="/Step1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasResult"/>
+        <NamedIndividual IRI="/Trigonometric_Function"/>
+        <NamedIndividual IRI="/Result2"/>
+    </ObjectPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasFunction"/>
+        <Class IRI="/Integration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasIntegration"/>
+        <Class IRI="/Integration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasResult"/>
+        <Class IRI="/Integration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasStep"/>
+        <Class IRI="/Integration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasTechnique"/>
+        <Class IRI="/Integration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasFunction"/>
+        <Class IRI="/Function"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasIntegration"/>
+        <Class IRI="/Steps"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasResult"/>
+        <Class IRI="/Result"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasStep"/>
+        <Class IRI="/Steps"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasTechnique"/>
+        <Class IRI="/Techniques"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
